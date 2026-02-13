@@ -1,0 +1,253 @@
+<!-- Latihan Praktikum -->
+<!-- Paragraf dan Line Break -->
+
+<html>
+    <head>
+        <title>PPW 1: Pertemuan 1</title>
+    </head>
+    <body bgcolor="">
+        <h3>PPW 1: Pertemuan 1</h3>
+        <p>
+            Perkenalkan saya R. Angga Kusna Jati, bisa dipanggil Angga. Saya merupakan seorang mahasiswa jurusan Teknologi Rekayasa Perangkat Lunak di Universitas Gadjah Mada. Di dalam file ini, kita akan belajar HTML.
+        </p>
+        <h4>1. Paragraf dan Line Break</h4>
+        <p>
+            Ini adalah contoh paragraf. Kita bisa membuat paragraf dengan menggunakan tag < p > di awal dan < /p > di akhir. Isi atau tulisan dari paragraf bisa kita letakkan di antara kedua tag tersebut. Tag < p > disebut sebagai tag pembuka, sedangkan tag < /p > disebut dengan tag penutup
+        </p>
+        <p>
+            Dalam menulis paragraf, tentu memerlukan sebuah tata letak untuk memisahkan antara satu paragraf dengan paragraf yang lain. Salah satu cara untuk melakukannya adalah dengan menggunakan line break. Di dalam HTML, line break dapat dibuat dengan menggunakan tag < br > (tanpa tag penutup). Berikut contohnya
+        </p>
+        <p>
+            Ini adalah paragraf 1. Blablablabla<br>
+            Ini adalah paragraf 2. Blablablabla<br>
+        </p>
+
+        <br><br><br>
+        <hr color="black">
+       
+        <h4>2. Background Color dan Heading</h4>
+        <p>
+            Warna latar belakang dari halaman ini adalah biru muda (lightblue). Warna latar belakang halaman web bisa diatur dengan menggunakan atribut "bgcolor" di dalam tag pembuka body (< body >).
+        </p>
+
+        <br><br>
+
+        <p>
+            Di bawah ini merupakan contoh heading dengan berbagai tingkatan. Semakin kecil angkanya, maka ukuran heading-nya akan semakin besar.
+        </p>
+        <h1>Ini adalah heading 1</h1>
+        <h2>Ini adalah heading 2</h2>
+        <h3>Ini adalah heading 3</h3>
+        <h4>Ini adalah heading 4</h4>
+        <h5>Ini adalah heading 5</h5>
+        <h6>Ini adalah heading 6</h6>
+        <br>
+        <p>
+            Heading digunakan untuk menulis judul atau subjudul. Tata letak heading bisa diatur dengan menggunakan atribut "align" di dalam tag pembuka heading, yaitu < h... >. Tata letak heading dapat diatur menjadi rata kiri (left), tengah (center), atau kanan (right). Untuk rata kiri, sebenarnya tidak perlu diberi tambahan atribut karena tata letak bawaannya adalah rata kiri.
+        </p>
+        <h4 align="left">Heading Rata Kiri</h4>
+        <h4 align="center">Heading Rata Tengah</h4>
+        <h4 align="right">Heading Rata Kanan</h4>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>3. Garis Horizontal dan Komentar Tersembunyi</h4>
+        <p>
+            Garis horizontal dapat dibuat dengan menulis tag < hr >. Garis ini biasanya digunakan untuk memisahkan konten atau bagian yang berbeda di dalam sebuah halaman web. Tata letak bawaan dari garis horizontal adalah memenuhi lebar halaman web.
+        </p>
+        <hr color="green">
+        <p align="justify">(Isi paragraf)</p>
+        <hr width="80%" size="10" align="center">
+        <p align="justify">(Isi paragraf)</p>
+        <hr width="400" size="7" align="right" color="red">
+
+        <br>
+        <p>Komentar tersembunyi adalah komentar yang hanya bisa dilihat melalui kode editor dan tidak akan ditampilkan di dalam web.</p>
+        <!-- Contoh komentar tersembunyi -->
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>4. Pemformatan Teks</h4>
+        <p>
+            Terdapat beberapa jenis pemformatan teks, yaitu tebal, miring, huruf besar, huruf kecil, subscript, superscript.
+        </p>
+        <b>Ini adalah teks tebal</b>
+        <br>
+        <strong>Ini juga teks tebal</strong>
+        <br>
+        <big>Ini adalah teks dengan ukuran huruf lebih besar</big>
+        <br>
+        <em>Ini adalah teks miring</em> <br>
+        <i>Ini juga teks miring</i>
+        <br>
+        <small>Ini adalah teks dengan huruf kecil</small>
+        <br>
+        Ini adalah contoh dari <sub>subscript</sub>
+        <br>
+        Ini adalah contoh dari <sup>superscript</sup>
+
+
+        <!-- <p>Teks tebal dapat dibuat dengan cara menggunakan tag pembuka < b > dan tag penutup < /b ></p> -->
+        <!-- <p>Teks tebal juga dapat dibuat dengan cara menggunakan tag pembuka < strong > dan tag penutup < /strong ></p> -->
+        <!-- <p>Teks dengan ukuran huruf lebih besar dapat dibuat dengan cara menggunakan tag pembuka < big > dan tag penutup < /big ></p> -->
+        <!-- <p>Teks miring dapat dibuat dengan cara menggunakan tag pembuka < em > dan tag penutup < /em >. Selain itu, teks miring juga dapat dibuat dengan cara menggunakan tag pembuka < i > dan tag penutup < /i >.</p> -->
+        <!-- <p>Teks dengan huruf kecil dapat dibuat dengan cara menggunakan tag pembuka < small > dan tag penutup < /small ></p> -->
+        <!-- <p>Subscript dapat dibuat dengan cara menggunakan tag pembuka < sub > dan tag penutup < /sub ></p> -->
+        <!-- <p>Superscript dapat dibuat dengan cara menggunakan tag pembuka < sup > dan tag penutup < /sup ></p> -->
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>5. Teks yang di-preformat</h4>
+        <p>Teks yang di-preformat dapat dibuat dengan cara menggunakan tag pembuka < pre > dan tag penutup < /pre >. Tujuannya adalah untuk menampilkan teks sesuai dengan format atau tata letak yang berada di dalam tag tersebut. Berikut contoh penggunaanya:</p>
+        <pre>
+            Ini     adalah teks
+            yang di-preformat.
+        </pre>
+        <br>
+        <pre>
+            for i = 1 to 10
+                print(i)
+            next i
+        </pre>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>6. Arah Teks dan Quotation</h4>
+        <p>
+            Arah teks dapat diatur dengan menggunakan tag pembuka < bdo > dan tag penutup < /bdo >. Di dalam tag ini, juga diberikan atribut "dir" untuk menentukan arah penulisan teks. Berikut adalah contoh arah penulisan teks dari kanan ke kiri dengan "dir" bernilai "rtl" (right to left):
+        </p>
+        <bdo dir="rtl">
+            Ini adalah teks yang ditulis dari kanan ke kiri.
+        </bdo>
+        <br><br>
+        Ini adalah contoh quotation panjang:
+        <blockquote>
+            Ini adalah quotation panjang. Ini adalah quotation panjang. Ini adalah quotation panjang. Ini adalah quotation panjang.
+        </blockquote>
+        <br>
+        Ini adalah contoh quotation pendek:
+        <q>
+            Ini adalah contoh quotation pendek.
+        </q>
+        <p>
+            Quotation panjang dapat dibuat dengan tag pembuka < blockquote > dan tag penutup < /blockquote >. Quotation pendek dapat dibuat dengan tag pembuka < q > dan tag penutup < /q >. Quotation dibuat dengan tujuan menandai kutipan dari sumber lain secara struktural dan semantik.
+        </p>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>7. List Unordered dan Ordered</h4>
+        <p>Berikut contoh list unordered:</p>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+        <br>
+        <p>Berikut contoh list ordered:</p>
+        <ol>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>
+            List unordered dapat dibuat dengan tag pembuka < ul > dan tag penutup < /ul >, sedangkan list ordered dapat dibuat dengan tag pembuka < ol > dan tag penutup < /ol >. List ordered dibuat untuk menampilkan daftar terurut, sedangkan list unordered dibuat untuk menampilkan daftar tidak terurut.
+        </p>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>8. Jenis-jenis List Ordered</h4>
+        <p>Contoh list ordered bernomor:</p>
+        <ol>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>Contoh list ordered dengan huruf:</p>
+        <ol type="A">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>Contoh list ordered dengan huruf kecil:</p>
+        <ol type="a">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>Contoh list ordered dengan angka romawi:</p>
+        <ol type="I">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>Contoh list ordered dengan angka romawi kecil:</p>
+        <ol type="i">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ol>
+        <p>
+            List ordered dengan angka dapat dibuat dengan tag pembuka < ol > dan tag penutup < /ol >. Sedangkan, list ordered dengan huruf dapat dibuat dengan cara menambahkan atribut "type" di dalam tag pembuka < ol >. Pengguna dapat mengisi nilai dari "type" sesuai dengan huruf yang akan dijadikan sebagai poin pertama dalam daftar urutan.
+        </p>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>9. Jenis-jenis List Unordered</h4>
+        <h4>List dengan bullet berbentuk disc:</h4>
+        <ul type="disc">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+        <h4>List dengan bullet berbentuk lingkaran:</h4>
+        <ul type="circle">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+        <h4>List dengan bullet berbentuk kotak:</h4>
+        <ul type="square">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+        <p>
+            List unordered dapat dibuat dengan tag pembuka < ul > dan tag penutup < /ul >. Sama seperti list ordered, pengguna dapat mengisi nilai dari "type" sesuai dengan bentuk atau simbol yang akan dijadikan sebagai penanda poin dalam daftar.
+        </p>
+
+        <br><br><br>
+        <hr color="black">
+
+        <h4>10. List Bersarang dan List Definisi</h4>
+        <p>Berikut ini contoh list bersarang</p>
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <ul>
+                <li>List 2.1</li>
+                <li>List 2.2</li>
+            </ul>
+            <li>List 3</li>
+        </ul>
+        <p>Berikut ini contoh list definisi</p>
+        <dl>
+            <dt>Definisi 1</dt>
+            <dd>Deskripsi 1</dd>
+            <dt>Definisi 2</dt>
+            <dd>Deskripsi 2</dd>
+        </dl>
+        <p>
+            List bersarang adalah list yang menampung list lain di dalamnya. List bersarang dapat dibuat dengan membuat tag list seperti ul atau ol di dalam ul atau ol.
+        </p>
+        <p>
+            List definisi adalah list yang berisi pasangan antara poin dan deskripsi. List definisi dapat dibuat dengan tag pembuka < dl > dan tag penutup < /dl >.
+        </p>
+    </body>
+</html>
