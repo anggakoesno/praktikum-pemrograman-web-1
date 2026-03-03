@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPW1 Pertemuan 4: Tugas Form</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <h2>Manajemen Menu Warung</h2>
+    <img src="ppw1-4_banner_warung.png" alt="Banner Warung" width="400" height="120">
+    <h3>Form Input Menu</h3>
+    <form action="">
+        <div>
+            <img src="ppw1-4_menu_warung.png" alt="Logo Warung" width="200">
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Input By:</label>
+                    <input type="text" value="Angga" readonly size="5px">  
+                </td>
+                <td>
+                    <label for="ttanggal">Tanggal Input:</label>
+                    <input type="date" id="ttanggal" name="ttanggal">
+                </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                    <label for="tnama">Nama: </label>
+                </td>
+                <td>
+                    <input type="text" id="tnama" name="tnama">
+                </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                    <label for="tkategori">Kategori:</label>
+                </td>
+                <td>
+                    <select id="tkategori" name="tkategori">
+                        <option value="" disabled selected>-- Pilih Kategori --</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="minuman">Minuman</option>
+                        <option value="snack">Snack</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                    <label for="thargabeli">Harga Beli:</label>
+                </td>
+                <td>
+                    <input type="number" id="thargabeli" name="thargabeli" min="0" placeholder="Misal: 7000">
+                </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                    <label for="thargajual">Harga Jual:</label>
+                </td>
+                <td>
+                    <input type="number" id="thargajual" name="thargajual" min="0" placeholder="Misal: 7000">
+                </td>
+            </tr>
+
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+
+            <tr>
+                <td>
+                    <label for="tstok">Stok:</label>
+                </td>
+                <td>
+                    <input type="number" id="tstok" name="tstok" min="0" placeholder="Misal: 7">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Simpan Data Menu" onclick="alert('Data Menu berhasil disimpan!')">
+    </form>
+
+</body>
+</html>

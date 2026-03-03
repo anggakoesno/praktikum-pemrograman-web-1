@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPW1 Pertemuan 4: Tugas Tags dalam Form</title>
+</head>
+<body>
+    <h2>Membuat Contoh Elemen HTML Form</h2>
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <p><b>Tag < fieldset > dan < legend > </b></p>
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label for="nama">Nama: </label>
+            <input type="text" id="nama">
+            <br><br>
+            <label for="asal">Asal: </label>
+            <input type="text" id="asal">
+        </fieldset>
+        <p>Fieldset berfungsi sebagai pembungkus atau kontainer elemen-elemen input. Legend berfungsi menentukan judul atau keterangan untuk fieldset</p>
+        <br><hr>
+        <p><b>Tag < datalist ></b></p>
+        <input list="nama-kota">
+        <datalist id="nama-kota">
+            <option value="Jakarta"></option>
+            <option value="Bandung"></option>
+            <option value="Semarang"></option>
+            <option value="Yogyakarta"></option>
+            <option value="Surabaya"></option>
+        </datalist>
+        <p>Elemen datalist akan memberikan auto-complete dari data yang sudah disiapkan. Terlebih dahulu, mahasiswa membuat elemen input yang memiliki atribut list. Kemudian, mahasiswa dapat membuat elemen datalist dengan atribut id. Nilai dari atribut list milik elemen input harus sama dengan nilai dari atribut id milik elemen datalist. Di dalam datalist, mahasiswa dapat mengisi dengan elemen option.</p>
+
+        <br><hr>
+        <p><b>Tag < optgroup > dan < option > </b></p>
+        <label for="cars">Choose a car:</label>
+        <select  name="cars" id="cars">
+        <optgroup label="Mobil Swedia">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="Mobil Jerman">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+        </select>
+        <p>Optgroup berfungsi untuk mengelompokkan option dengan label tertentu.</p>
+
+        <p><b>Tag < output > </b></p>
+        <label>Kalkulator Sederhana (A + B):</label>
+        <br>
+        <input type="number" id="a" value="0"> +
+        <input type="number" id="b" value="0"> =
+        <output name="x" for="a b">0</output>
+
+        <p>Output digunakan untuk menampilkan hasil dari sebuah perhitungan atau kalkulasi skrip (biasanya menggunakan JavaScript)</p>
+    </form>
+    
+</body>
+</html>
