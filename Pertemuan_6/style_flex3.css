@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(209, 233, 252);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper {
+    border: 1px solid black;
+    background-color: white;
+}
+
+.header {
+    background-color: tomato;
+}
+
+img {
+    width: 200px;
+}
+
+.main {
+    background-color:aquamarine
+}
