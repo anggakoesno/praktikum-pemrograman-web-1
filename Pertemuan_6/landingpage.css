@@ -40,6 +40,19 @@ nav a {
     text-decoration: none;
 }
 
+nav button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 19px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgb(52, 78, 244);
+}
+
 .hero {
     background-color: aquamarine;
     text-align: center;
@@ -50,6 +63,7 @@ nav a {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    padding-top: 27px;
 }
 
 .grid {
@@ -65,6 +79,13 @@ nav a {
     flex: 1;
     padding: 20px;
     text-align: center;
+    border-radius: 7px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 7px;
 }
 
