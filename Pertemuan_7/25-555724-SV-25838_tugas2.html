@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Landing Page Warung Makan</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* 1. Navbar: Space-Between */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            height: 70px;
+            background: #7318eb;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo img{
+            height: 40px;
+            margin-right: 10px;
+            position: relative;
+            left: 0;
+        }
+
+        .navbar ul {
+            display: flex; /* Mengaktifkan flex untuk menu */
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-login {
+            background-color: #1fbbea;
+            padding: 8px 16px;
+            border-radius: 7px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-login:hover {
+            background-color: #2894ed;
+            transform: translateY(-3px);
+        }
+
+        /* 2. Hero Section: Flexbox */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            background: white;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            color: #2d3436;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background-color: #7318eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-cta:hover {
+            background-color: #410095;
+        }
+
+        /* 3. Card Grid: Wrap */
+        .features {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Kriteria Tugas */
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            flex: 1 1 300px; /* Fleksibel, lebar dasar 300px */
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        /* 4. Footer: 3 Kolom & Gap */
+        footer {
+            background-color: #2d3436;
+            color: white;
+            padding: 50px 10%;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px; /* Kriteria Tugas */
+        }
+
+        .footer-column {
+            flex: 1;
+        }
+
+        .footer-column h4 {
+            border-bottom: 2px solid #7318eb;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Media Query untuk Layar Kecil */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column; /* Tumpuk vertikal */
+                text-align: center;
+            }
+
+            .hero-image {
+                order: -1; /* Gambar muncul di atas teks pada HP */
+            }
+
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            .navbar ul {
+                margin-top: 15px;
+            }
+
+            .footer-container {
+                flex-direction: column; /* Footer jadi 1 kolom */
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Kelola Pesanan Warung dengan Sistem Digital</h1>
+            <p>Solusi modern untuk manajemen menu, data karyawan, dan data pesanan yang lebih efisien.</p>
+            <a href="#" class="btn-cta">Mulai Sekarang</a> 
+        </div>
+        <div class="hero-image">
+            <img src="warungmakan.jpeg" alt="Ilustrasi Warung">
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Fitur Utama Kami</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Akses Karyawan</h3>
+                <p>Keamanan terjamin dengan sistem login khusus untuk staf dan manajemen.</p>
+            </div>
+            <div class="card">
+                <h3>Data Karyawan</h3>
+                <p>Kelola profil, jadwal, dan performa tim Anda dalam satu dasbor pusat.</p>
+            </div>
+            <div class="card">
+                <h3>Kategori Menu</h3>
+                <p>Organisir menu makanan dan minuman dengan kategori yang mudah disesuaikan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Tentang Kami</h4>
+                <p>Sistem manajemen warung makan modern untuk efisiensi bisnis kuliner Anda.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Alamat</h4>
+                <p>Jl. Persatuan No. 1, Sleman</p>
+            </div>
+            <div class="footer-column">
+                <h4>Hubungi Kami</h4>
+                <p>Email: rafaelanggajati@gmail.com<br>Instagram: @mnjmenuwrg_</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
