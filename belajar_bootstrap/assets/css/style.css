@@ -1,0 +1,55 @@
+body { 
+    background-color: #e5e5e5; 
+}
+
+.header { 
+    background-color: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+nav.menus { 
+    background-color: #1d77dd; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+nav.menus ul { 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+nav.menus ul li { 
+    display: inline-block; 
+}
+
+nav.menus ul li a { 
+    display: block; 
+    padding: 5px 15px; 
+    color: #fff; 
+    text-decoration: none; 
+}
+
+nav.menus ul li a:hover { 
+    background-color: #0b58a6; 
+    border-radius: 3px; 
+}
+
+.posts, .widgets { 
+    background-color: #fff; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+}
+
+.widget-title { 
+    border-bottom: 4px solid #255fe7; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+
+footer { 
+    padding: 20px; 
+    font-size: 12px; 
+}
