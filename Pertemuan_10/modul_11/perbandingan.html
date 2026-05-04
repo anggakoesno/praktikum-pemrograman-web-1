@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan 2 Bilangan</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Masukkan bilangan pertama: "));
+        var b = Number(prompt("Masukkan bilangan kedua: ")); 
+        var hasil = "";
+
+        if (a > b) {
+            hasil = "BILANGAN PERTAMA (" + a + ") LEBIH BESAR DARI BILANGAN KEDUA (" + b + ")";
+        } else if (a < b) {
+            hasil = "BILANGAN PERTAMA (" + a + ") LEBIH KECIL DARI BILANGAN KEDUA (" + b + ")";
+        } else {
+            hasil = "BILANGAN PERTAMA (" + a + ") SAMA DENGAN BILANGAN KEDUA (" + b + ")";
+        }
+
+        document.write("<h2>Hasil Perbandingan:</h2>");
+        document.write("<p>Bilangan 1: " + a + "</p>");
+        document.write("<p>Bilangan 2: " + b + "</p>");
+        document.write("<p>Hasil: " + hasil + "</p>");
+    </script>
+</body>
+</html>

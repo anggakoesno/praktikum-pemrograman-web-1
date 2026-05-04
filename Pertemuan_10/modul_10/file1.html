@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemanggilan JS</title>
+
+    <script>
+        console.log("Halaman sedang dimuat (JS Embed)");
+        function sapaUser() {
+            document.write("Halo! Selamat datang di Praktikum PPW1");
+        }
+    </script>
+</head>
+<body>
+    <h1>Implementasi 3 cara pemanggilan JS</h1>
+
+    <!-- JS Inline -->
+    <button onclick="alert('Ini adalah JS Inline!')">Klik untuk Pesan Inline</button>
+    
+    <br><br>
+
+    <!-- Fungsi dari JS Eksternal -->
+    <button onclick="pesanEksternal()">Klik untuk Pesan Eksternal</button>
+
+    <br><br>
+
+    <!-- JS Eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>

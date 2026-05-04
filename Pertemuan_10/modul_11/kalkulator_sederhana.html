@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Masukkan bilangan pertama: "));
+        var b = Number(prompt("Masukkan bilangan kedua: ")); 
+        var operator = prompt("Pilih operator (+, -, *, /): ");
+        var hasil;
+
+        if (operator === "+") {
+            hasil = a + b;
+        } else if (operator === "-") {
+            hasil = a - b;
+        } else if (operator === "*") {
+            hasil = a * b;
+        } else if (operator === "/") {
+            if (b !== 0) {
+                hasil = a / b;
+            } else {
+                hasil = "Error: Pembagian dengan nol tidak diperbolehkan.";
+            }
+        } else {
+            hasil = "Operator tidak valid.";
+        }
+
+        document.write("<h2>Hasil Kalkulator:</h2>");
+        document.write("<p>Bilangan 1: " + a + "</p>");
+        document.write("<p>Bilangan 2: " + b + "</p>");
+        document.write("<p>Operator: " + operator + "</p>");
+        document.write("<p>Hasil: " + hasil + "</p>");
+    </script>
+
+
+</body>
+</html>

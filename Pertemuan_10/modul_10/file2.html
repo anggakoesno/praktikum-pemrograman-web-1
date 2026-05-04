@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output JavaScript</title>
+</head>
+<body>
+    <h1>Demo Output JavaScript</h1>
+    <hr>
+
+    <!-- Tempat untuk output innerHTML -->
+    <div id="box-output" style="border: 1px solid #ccc; padding: 10px;">
+        Konten ini akan diganti oleh JavaScript...
+    </div>
+
+    <script>
+        // 1. Output menggunakan alert() - Muncul sebagai jendela dialog
+        alert("Peringatan: Demo output JavaScript dimulai!");
+
+        // 2. Output menggunakan console.log() - Muncul di Console browser (F12)
+        console.log("Pesan ini hanya terlihat di Developer Tools / Console.");
+
+        // 3. Output menggunakan document.write() - Menulis langsung ke dokumen HTML[cite: 2]
+        document.write("<p><i>Teks ini ditulis menggunakan fungsi document.write().</i></p>");
+
+        // 4. Output menggunakan innerHTML - Menargetkan elemen spesifik berdasarkan ID[cite: 2]
+        var targetElement = document.getElementById("box-output");
+        targetElement.innerHTML = "<h3>Sukses!</h3><p>Konten ini ditampilkan melalui <b>innerHTML</b>.</p>";
+    </script>
+</body>
+</html>
