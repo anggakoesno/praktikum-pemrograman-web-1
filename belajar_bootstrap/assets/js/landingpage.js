@@ -131,3 +131,8 @@
                 }
             });
         });
+
+        // Fungsi JavaScript untuk tombol Login
+        function login() {
+            alert('Fitur login belum tersedia. Silakan coba lagi nanti!');
+        };
